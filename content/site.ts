@@ -59,7 +59,7 @@ export const site = {
   name: "Soli7",
   tagline: "Ensemble vocal lyrique",
   description:
-    "Soli7 réunit six voix lyriques accompagnées d'une pianiste, autour d'un répertoire allant de l'opéra à la mélodie, de l'air sacré au contemporain, pour le concert comme pour vos événements.",
+    "Soli7 réunit six voix lyriques accompagnées d'une pianiste, autour d'un répertoire allant de l'opéra à la mélodie, de l'air sacré au contemporain.",
   email: "ensemble.soli7@gmail.com",
 
   about: [
