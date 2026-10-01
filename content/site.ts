@@ -64,7 +64,7 @@ export const site = {
 
   about: [
     "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le plaisir de chanter.",
-    "Des grands chœurs d'opéra aux pièces sacrées, en passant par les duos et trios les plus célèbres, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
+    "Des airs d'opéra aux pièces sacrées, en solo, en duo ou en tutti, l'ensemble construit des programmes sur mesure, en concert ou lors d'événements privés.",
   ],
 
   groupPhoto: {
