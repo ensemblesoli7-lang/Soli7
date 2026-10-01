@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function Members() {
   return (
-    <Section id="membres" eyebrow="Les voix" title="Membres">
+    <Section id="membres" eyebrow="Les artistes" title="Membres">
       <div className="grid items-center gap-12 md:grid-cols-[3fr_2fr]">
         <div className="relative aspect-[4/3] overflow-hidden bg-cream">
           {site.groupPhoto ? (
@@ -32,7 +32,7 @@ export function Members() {
             <li key={index} className="flex items-baseline justify-between gap-4 py-4">
               <span className="font-serif text-2xl">{member.name}</span>
               <span className="text-sm uppercase tracking-[0.15em] text-burgundy">
-                {member.voice}
+                {member.role}
               </span>
             </li>
           ))}

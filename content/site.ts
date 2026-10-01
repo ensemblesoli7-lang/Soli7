@@ -2,18 +2,19 @@
 // Pour les photos : déposer le fichier dans public/images/ et indiquer
 // son chemin, par exemple "/images/groupe.jpg".
 
-export type Voice =
+export type Role =
   | "Soprano"
   | "Mezzo-soprano"
   | "Alto"
   | "Contre-ténor"
   | "Ténor"
   | "Baryton"
-  | "Basse";
+  | "Basse"
+  | "Piano";
 
 export type Member = {
   name: string;
-  voice: Voice;
+  role: Role;
 };
 
 export type Work = {
@@ -58,27 +59,27 @@ export const site = {
   name: "Soli7",
   tagline: "Ensemble vocal lyrique",
   description:
-    "Soli7 réunit sept voix lyriques autour d'un répertoire allant de l'opéra à la mélodie, pour le concert comme pour vos événements.",
+    "Soli7 réunit six voix lyriques accompagnées d'une pianiste, autour d'un répertoire allant de l'opéra à la mélodie, pour le concert comme pour vos événements.",
   email: "ensemble.soli7@gmail.com",
 
   about: [
-    "Soli7 est un ensemble vocal de sept chanteurs lyriques, né de l'envie de partager le répertoire de l'opéra, de l'oratorio et de la mélodie au plus près du public.",
+    "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le répertoire de l'opéra, de l'oratorio et de la mélodie au plus près du public.",
     "Des grands chœurs d'opéra aux pièces sacrées, en passant par les duos et trios les plus célèbres, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
   ],
 
   groupPhoto: {
     src: "/images/groupe.jpg",
-    alt: "Les sept chanteuses et chanteurs de l'ensemble Soli7, réunis et souriants",
+    alt: "Les six chanteurs et la pianiste de l'ensemble Soli7, réunis et souriants",
   } as Photo | undefined,
 
   members: [
-    { name: "Prénom Nom", voice: "Soprano" },
-    { name: "Prénom Nom", voice: "Soprano" },
-    { name: "Prénom Nom", voice: "Mezzo-soprano" },
-    { name: "Prénom Nom", voice: "Alto" },
-    { name: "Prénom Nom", voice: "Ténor" },
-    { name: "Prénom Nom", voice: "Baryton" },
-    { name: "Prénom Nom", voice: "Basse" },
+    { name: "Prénom Nom", role: "Soprano" },
+    { name: "Prénom Nom", role: "Soprano" },
+    { name: "Prénom Nom", role: "Mezzo-soprano" },
+    { name: "Prénom Nom", role: "Ténor" },
+    { name: "Prénom Nom", role: "Baryton" },
+    { name: "Prénom Nom", role: "Basse" },
+    { name: "Prénom Nom", role: "Piano" },
   ] satisfies Member[],
 
   events: [
