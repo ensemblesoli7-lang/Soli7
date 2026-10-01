@@ -21,13 +21,13 @@ export function EventCard({ event }: { event: SoliEvent }) {
 
   return (
     <article className="group relative flex gap-5 border border-gold/30 bg-ivory p-5 transition-shadow hover:shadow-lg sm:gap-6 sm:p-6">
-      <div className="relative aspect-[3/4] w-20 shrink-0 self-start overflow-hidden bg-cream sm:w-28">
+      <div className="relative aspect-[4/3] w-28 shrink-0 self-start overflow-hidden bg-cream sm:w-44">
         {thumbnail ? (
           <Image
             src={thumbnail.src}
             alt={thumbnail.alt}
             fill
-            // Large marge : une photo paysage doit couvrir la hauteur du cadre portrait
+            // Large marge : une photo très panoramique doit aussi couvrir la hauteur du cadre
             sizes="400px"
             style={{ objectPosition: thumbnail.focus }}
             className="object-cover transition-transform duration-300 group-hover:scale-105"
