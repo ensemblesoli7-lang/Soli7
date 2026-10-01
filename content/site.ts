@@ -63,7 +63,7 @@ export const site = {
   email: "ensemble.soli7@gmail.com",
 
   about: [
-    "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le répertoire de l'opéra, de l'oratorio et de la mélodie au plus près du public.",
+    "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le plaisir de chanter.",
     "Des grands chœurs d'opéra aux pièces sacrées, en passant par les duos et trios les plus célèbres, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
   ],
 
