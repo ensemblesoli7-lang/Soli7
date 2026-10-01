@@ -131,6 +131,7 @@ export const site = {
     },
     {
       date: "2026-03-22",
+      time: "16:30",
       access: "public",
       context: "Concert de musique sacrée",
       venue: "Église Saint-Philippe-Saint-Jacques, place de la Mairie",
