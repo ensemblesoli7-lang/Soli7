@@ -87,41 +87,6 @@ export const site = {
 
   events: [
     {
-      date: "2026-12-13",
-      time: "17:00",
-      access: "public",
-      context: "Concert de Noël",
-      venue: "Église Saint-Exemple",
-      city: "Paris",
-      works: [
-        { title: "Cantique de Jean Racine", composer: "Gabriel Fauré" },
-        { title: "Ave verum corpus", composer: "W. A. Mozart" },
-        { title: "Minuit, chrétiens", composer: "Adolphe Adam" },
-      ],
-    },
-    {
-      date: "2027-02-06",
-      access: "private",
-      context: "Réception d'entreprise",
-      venue: "Salons de l'Hôtel Exemple",
-      city: "Versailles",
-      works: [
-        { title: "Barcarolle (Les Contes d'Hoffmann)", composer: "Jacques Offenbach" },
-        { title: "Libiamo ne' lieti calici (La Traviata)", composer: "Giuseppe Verdi" },
-      ],
-    },
-    {
-      date: "2026-09-12",
-      access: "private",
-      context: "Mariage",
-      venue: "Château Exemple",
-      city: "Chantilly",
-      works: [
-        { title: "Duo des fleurs (Lakmé)", composer: "Léo Delibes" },
-        { title: "O mio babbino caro (Gianni Schicchi)", composer: "Giacomo Puccini" },
-      ],
-    },
-    {
       date: "2026-03-22",
       access: "public",
       context: "Concert de musique sacrée",
@@ -129,19 +94,6 @@ export const site = {
       city: "Châtillon",
       works: [],
       note: "Entrée libre",
-    },
-    {
-      date: "2026-06-21",
-      time: "20:30",
-      access: "public",
-      context: "Fête de la musique",
-      venue: "Jardin Exemple",
-      city: "Paris",
-      works: [
-        { title: "Va, pensiero (Nabucco)", composer: "Giuseppe Verdi" },
-        { title: "Habanera (Carmen)", composer: "Georges Bizet" },
-        { title: "Chœur des bohémiens (Il Trovatore)", composer: "Giuseppe Verdi" },
-      ],
     },
   ] satisfies SoliEvent[] as SoliEvent[],
 
