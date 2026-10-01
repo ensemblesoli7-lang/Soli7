@@ -89,7 +89,7 @@ export const site = {
   events: [
     {
       date: "2026-11-28",
-      access: "public",
+      access: "private",
       context: "Concert vocal — Musique sacrée, opéra, mélodie",
       city: "Chartres",
       works: [],
