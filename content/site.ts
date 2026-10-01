@@ -10,7 +10,8 @@ export type Role =
   | "Ténor"
   | "Baryton"
   | "Basse"
-  | "Piano";
+  | "Piano"
+  | "Clavier";
 
 export type Member = {
   name: string;
@@ -79,7 +80,7 @@ export const site = {
     { name: "Caroline", role: "Alto" },
     { name: "Didier", role: "Ténor" },
     { name: "Antoine", role: "Baryton" },
-    { name: "Prénom Nom", role: "Piano" },
+    { name: "Marie-Marguerite", role: "Clavier" },
   ] satisfies Member[],
 
   events: [
