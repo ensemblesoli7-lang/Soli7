@@ -75,7 +75,7 @@ export const site = {
   members: [
     { name: "Stéphanie", role: "Soprano" },
     { name: "Isabelle", role: "Soprano" },
-    { name: "Prénom Nom", role: "Mezzo-soprano" },
+    { name: "Alexandra", role: "Mezzo-soprano" },
     { name: "Prénom Nom", role: "Ténor" },
     { name: "Prénom Nom", role: "Baryton" },
     { name: "Prénom Nom", role: "Basse" },
