@@ -122,7 +122,7 @@ export const site = {
         focus: "35% center",
       },
       poster: {
-        src: "/images/evenements/2026-03-22-chatillon/affiche.jpg",
+        src: "/images/evenements/2026-03-22-chatillon/affiche-velazquez.jpg",
         alt: "Affiche du concert de musique sacrée du dimanche 22 mars 2026 à 16h30, église Saint-Philippe-Saint-Jacques de Châtillon, sur fond du Christ crucifié de Velázquez",
       },
     },
