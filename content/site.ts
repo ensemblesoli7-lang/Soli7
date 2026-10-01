@@ -73,7 +73,7 @@ export const site = {
   } as Photo | undefined,
 
   members: [
-    { name: "Prénom Nom", role: "Soprano" },
+    { name: "Stéphanie", role: "Soprano" },
     { name: "Prénom Nom", role: "Soprano" },
     { name: "Prénom Nom", role: "Mezzo-soprano" },
     { name: "Prénom Nom", role: "Ténor" },
