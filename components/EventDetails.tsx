@@ -30,7 +30,7 @@ export function EventHeading({
       </div>
 
       <Title
-        className={`mt-4 font-serif ${Title === "h1" ? "text-4xl sm:text-5xl" : "text-3xl"}`}
+        className={`mt-4 font-serif ${Title === "h1" ? "text-4xl sm:text-5xl" : "text-2xl sm:text-3xl"}`}
       >
         {event.context}
       </Title>

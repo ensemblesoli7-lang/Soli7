@@ -26,6 +26,8 @@ export type Work = {
 export type Photo = {
   src: string;
   alt: string;
+  /** Point de cadrage quand l'image est recadrée, ex. "30% center" (centré par défaut) */
+  focus?: string;
 };
 
 /** Photo ou courte vidéo (MP4, quelques Mo maximum) d'un événement */
@@ -46,7 +48,9 @@ export type SoliEvent = {
   venue?: string;
   city: string;
   works: Work[];
-  /** Photo du lieu, affichée en bandeau */
+  /** Miniature de la carte d'accueil — à défaut : affiche, 1re photo de la galerie, photo du lieu */
+  thumbnail?: Photo;
+  /** Photo du lieu */
   photo?: Photo;
   /** Affiche de l'événement, affichée en entier */
   poster?: Photo;
@@ -112,6 +116,15 @@ export const site = {
       city: "Châtillon",
       works: [],
       note: "Entrée libre",
+      thumbnail: {
+        src: "/images/evenements/2026-03-22-chatillon/eglise.jpg",
+        alt: "L'église Saint-Philippe-Saint-Jacques de Châtillon",
+        focus: "35% center",
+      },
+      poster: {
+        src: "/images/evenements/2026-03-22-chatillon/affiche.jpg",
+        alt: "Affiche du concert de musique sacrée du dimanche 22 mars 2026 à Châtillon",
+      },
     },
   ] satisfies SoliEvent[] as SoliEvent[],
 
