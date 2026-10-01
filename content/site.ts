@@ -28,6 +28,11 @@ export type Photo = {
   alt: string;
 };
 
+/** Photo ou courte vidéo (MP4, quelques Mo maximum) d'un événement */
+export type GalleryItem =
+  | { type: "photo"; src: string; alt: string }
+  | { type: "video"; src: string; alt: string };
+
 export type SoliEvent = {
   /** Format AAAA-MM-JJ */
   date: string;
@@ -41,7 +46,12 @@ export type SoliEvent = {
   venue?: string;
   city: string;
   works: Work[];
+  /** Photo du lieu, affichée en bandeau */
   photo?: Photo;
+  /** Affiche de l'événement, affichée en entier */
+  poster?: Photo;
+  /** Photos et courtes vidéos de l'événement */
+  gallery?: GalleryItem[];
   /** Lien billetterie ou réservation, affiché seulement pour un événement public */
   ticketUrl?: string;
   /** Info pratique, ex. « Entrée libre » */
@@ -78,10 +88,10 @@ export const site = {
 
   members: [
     { name: "Stéphanie", role: "Soprano" },
-    { name: "Isabelle", role: "Soprano" },
+    { name: "Isabelle Nel", role: "Soprano" },
     { name: "Alexandra", role: "Mezzo-soprano" },
     { name: "Caroline", role: "Alto" },
-    { name: "Didier", role: "Ténor" },
+    { name: "Didier Mauger", role: "Ténor" },
     { name: "Antoine", role: "Baryton" },
     { name: "Marie-Marguerite", role: "Clavier" },
   ] satisfies Member[],
