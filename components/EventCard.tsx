@@ -27,7 +27,8 @@ export function EventCard({ event }: { event: SoliEvent }) {
             src={thumbnail.src}
             alt={thumbnail.alt}
             fill
-            sizes="112px"
+            // Large marge : une photo paysage doit couvrir la hauteur du cadre portrait
+            sizes="400px"
             style={{ objectPosition: thumbnail.focus }}
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
