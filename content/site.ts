@@ -107,6 +107,11 @@ export const site = {
       context: "Concert",
       venue: "EHPAD Le Grand Clos",
       city: "Le Plessis-Bouchard",
+      thumbnail: {
+        src: "/images/evenements/2026-12-20-le-plessis-bouchard/salon-grand-clos.jpg",
+        alt: "Le salon de l'EHPAD Le Grand Clos, avec son piano à queue et sa cheminée",
+        focus: "20% center",
+      },
       works: [],
     },
     {
