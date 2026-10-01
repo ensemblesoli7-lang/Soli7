@@ -81,16 +81,16 @@ export default async function EventPage({ params }: PageProps<"/evenements/[slug
           <div className="mt-2 h-px w-16 bg-gold" aria-hidden="true" />
 
           {gallery.length > 0 ? (
-            <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {gallery.map((item) => (
-                <li key={item.src} className="relative aspect-square overflow-hidden bg-cream">
+                <li key={item.src} className="relative aspect-[3/2] overflow-hidden bg-cream">
                   {item.type === "photo" ? (
                     <a href={item.src} target="_blank" rel="noopener noreferrer">
                       <Image
                         src={item.src}
                         alt={item.alt}
                         fill
-                        sizes="(min-width: 1024px) 330px, (min-width: 640px) 33vw, 50vw"
+                        sizes="(min-width: 1024px) 500px, (min-width: 640px) 50vw, 100vw"
                         className="object-cover transition-transform duration-300 hover:scale-105"
                       />
                     </a>
@@ -101,7 +101,7 @@ export default async function EventPage({ params }: PageProps<"/evenements/[slug
                       controls
                       playsInline
                       preload="metadata"
-                      className="absolute inset-0 h-full w-full bg-ink object-cover"
+                      className="absolute inset-0 h-full w-full bg-ink object-contain"
                     />
                   )}
                 </li>

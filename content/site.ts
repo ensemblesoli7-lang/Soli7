@@ -121,6 +121,18 @@ export const site = {
         alt: "L'église Saint-Philippe-Saint-Jacques de Châtillon",
         focus: "35% center",
       },
+      gallery: [
+        {
+          type: "photo",
+          src: "/images/evenements/2026-03-22-chatillon/ensemble-1.jpg",
+          alt: "Soli7 en concert dans le chœur de l'église Saint-Philippe-Saint-Jacques de Châtillon",
+        },
+        {
+          type: "photo",
+          src: "/images/evenements/2026-03-22-chatillon/ensemble-2.jpg",
+          alt: "Le salut final des artistes de Soli7, main dans la main, devant le public",
+        },
+      ],
     },
   ] satisfies SoliEvent[] as SoliEvent[],
 
