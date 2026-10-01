@@ -1,0 +1,141 @@
+// Tout le contenu du site est ici. Les valeurs actuelles sont provisoires.
+// Pour les photos : déposer le fichier dans public/images/ et indiquer
+// son chemin, par exemple "/images/groupe.jpg".
+
+export type Voice =
+  | "Soprano"
+  | "Mezzo-soprano"
+  | "Alto"
+  | "Contre-ténor"
+  | "Ténor"
+  | "Baryton"
+  | "Basse";
+
+export type Member = {
+  name: string;
+  voice: Voice;
+};
+
+export type Work = {
+  title: string;
+  composer: string;
+};
+
+export type Photo = {
+  src: string;
+  alt: string;
+};
+
+export type SoliEvent = {
+  /** Format AAAA-MM-JJ */
+  date: string;
+  /** Format HH:MM, optionnel */
+  time?: string;
+  /** "public" : ouvert à tous — "private" : prestation privée */
+  access: "public" | "private";
+  /** Ex. « Concert de Noël », « Mariage », « Réception d'entreprise » */
+  context: string;
+  venue: string;
+  city: string;
+  works: Work[];
+  photo?: Photo;
+  /** Lien billetterie ou réservation, affiché seulement pour un événement public */
+  ticketUrl?: string;
+};
+
+export type Media = {
+  title: string;
+  /** Identifiant de la vidéo YouTube (la partie après « v= » dans l'URL) */
+  youtubeId: string;
+};
+
+export type Social = {
+  label: string;
+  url: string;
+};
+
+export const site = {
+  name: "Soli7",
+  tagline: "Ensemble vocal lyrique",
+  description:
+    "Soli7 réunit sept voix lyriques autour d'un répertoire allant de l'opéra à la mélodie, pour le concert comme pour vos événements.",
+  email: "ensemble.soli7@gmail.com",
+
+  about: [
+    "Soli7 est un ensemble vocal de sept chanteurs lyriques, né de l'envie de partager le répertoire de l'opéra, de l'oratorio et de la mélodie au plus près du public.",
+    "Des grands chœurs d'opéra aux pièces sacrées, en passant par les duos et trios les plus célèbres, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
+  ],
+
+  groupPhoto: {
+    src: "/images/groupe.jpg",
+    alt: "Les sept chanteuses et chanteurs de l'ensemble Soli7, réunis et souriants",
+  } as Photo | undefined,
+
+  members: [
+    { name: "Prénom Nom", voice: "Soprano" },
+    { name: "Prénom Nom", voice: "Soprano" },
+    { name: "Prénom Nom", voice: "Mezzo-soprano" },
+    { name: "Prénom Nom", voice: "Alto" },
+    { name: "Prénom Nom", voice: "Ténor" },
+    { name: "Prénom Nom", voice: "Baryton" },
+    { name: "Prénom Nom", voice: "Basse" },
+  ] satisfies Member[],
+
+  events: [
+    {
+      date: "2026-12-13",
+      time: "17:00",
+      access: "public",
+      context: "Concert de Noël",
+      venue: "Église Saint-Exemple",
+      city: "Paris",
+      works: [
+        { title: "Cantique de Jean Racine", composer: "Gabriel Fauré" },
+        { title: "Ave verum corpus", composer: "W. A. Mozart" },
+        { title: "Minuit, chrétiens", composer: "Adolphe Adam" },
+      ],
+    },
+    {
+      date: "2027-02-06",
+      access: "private",
+      context: "Réception d'entreprise",
+      venue: "Salons de l'Hôtel Exemple",
+      city: "Versailles",
+      works: [
+        { title: "Barcarolle (Les Contes d'Hoffmann)", composer: "Jacques Offenbach" },
+        { title: "Libiamo ne' lieti calici (La Traviata)", composer: "Giuseppe Verdi" },
+      ],
+    },
+    {
+      date: "2026-09-12",
+      access: "private",
+      context: "Mariage",
+      venue: "Château Exemple",
+      city: "Chantilly",
+      works: [
+        { title: "Duo des fleurs (Lakmé)", composer: "Léo Delibes" },
+        { title: "O mio babbino caro (Gianni Schicchi)", composer: "Giacomo Puccini" },
+      ],
+    },
+    {
+      date: "2026-06-21",
+      time: "20:30",
+      access: "public",
+      context: "Fête de la musique",
+      venue: "Jardin Exemple",
+      city: "Paris",
+      works: [
+        { title: "Va, pensiero (Nabucco)", composer: "Giuseppe Verdi" },
+        { title: "Habanera (Carmen)", composer: "Georges Bizet" },
+        { title: "Chœur des bohémiens (Il Trovatore)", composer: "Giuseppe Verdi" },
+      ],
+    },
+  ] satisfies SoliEvent[] as SoliEvent[],
+
+  media: [] as Media[],
+
+  /** Lien vers un profil Spotify, SoundCloud, etc. — optionnel */
+  listenUrl: undefined as Social | undefined,
+
+  socials: [] as Social[],
+};

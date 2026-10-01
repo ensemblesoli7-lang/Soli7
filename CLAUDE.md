@@ -2,7 +2,9 @@
 
 # Soli7
 
-Objectif du site : à définir.
+Site vitrine de Soli7, ensemble vocal de 7 chanteurs au répertoire lyrique (association à but non lucratif). Objectif : promouvoir le groupe, notamment via ses événements publics et privés, passés et à venir.
+
+One-page en français. **Tout le contenu (textes, membres, événements, médias) se modifie dans `content/site.ts`** ; les photos vont dans `public/images/`.
 
 ## Stack
 
