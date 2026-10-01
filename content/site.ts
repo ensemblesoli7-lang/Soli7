@@ -133,7 +133,7 @@ export const site = {
       thumbnail: {
         src: "/images/evenements/2026-03-22-chatillon/eglise.jpg",
         alt: "L'église Saint-Philippe-Saint-Jacques de Châtillon",
-        focus: "35% center",
+        focus: "center 25%",
       },
       gallery: [
         {

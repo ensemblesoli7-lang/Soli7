@@ -20,21 +20,20 @@ export function EventCard({ event }: { event: SoliEvent }) {
     : "Détails";
 
   return (
-    <article className="group relative flex gap-5 border border-gold/30 bg-ivory p-5 transition-shadow hover:shadow-lg sm:gap-6 sm:p-6">
-      <div className="relative aspect-[4/3] w-28 shrink-0 self-start overflow-hidden bg-cream sm:w-44">
+    <article className="group relative flex flex-col overflow-hidden border border-gold/30 bg-ivory transition-shadow hover:shadow-lg">
+      <div className="relative aspect-[16/9] overflow-hidden bg-cream">
         {thumbnail ? (
           <Image
             src={thumbnail.src}
             alt={thumbnail.alt}
             fill
-            // Large marge : une photo très panoramique doit aussi couvrir la hauteur du cadre
-            sizes="400px"
+            sizes="(min-width: 768px) 500px, 100vw"
             style={{ objectPosition: thumbnail.focus }}
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <div
-            className="absolute inset-1.5 flex items-center justify-center border border-gold/50 font-serif text-2xl text-gold/70"
+            className="absolute inset-3 flex items-center justify-center border border-gold/50 font-serif text-5xl text-gold/70"
             aria-hidden="true"
           >
             S7
@@ -42,7 +41,7 @@ export function EventCard({ event }: { event: SoliEvent }) {
         )}
       </div>
 
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
         <EventHeading event={event} titleAs="h4" />
         <EventProgramme event={event} />
 
