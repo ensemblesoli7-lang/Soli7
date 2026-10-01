@@ -48,6 +48,8 @@ export type SoliEvent = {
   venue?: string;
   city?: string;
   works: Work[];
+  /** Compositeurs au programme, quand le détail des œuvres n'est pas connu */
+  composers?: string[];
   /** Miniature de la carte d'accueil — à défaut : affiche, 1re photo de la galerie, photo du lieu */
   thumbnail?: Photo;
   /** Photo du lieu */
@@ -134,6 +136,19 @@ export const site = {
       venue: "Église Saint-Philippe-Saint-Jacques, place de la Mairie",
       city: "Châtillon",
       works: [],
+      composers: [
+        "Bach",
+        "Duruflé",
+        "Fauré",
+        "Pärt",
+        "Pergolèse",
+        "Poulenc",
+        "Puccini",
+        "Rossini",
+        "Rutter",
+        "Tavener",
+        "Verdi",
+      ],
       note: "Entrée libre",
       thumbnail: {
         src: "/images/evenements/2026-03-22-chatillon/eglise.jpg",

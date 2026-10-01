@@ -43,19 +43,25 @@ export function EventHeading({
 }
 
 export function EventProgramme({ event }: { event: SoliEvent }) {
-  if (event.works.length === 0) return null;
+  const composers = event.composers ?? [];
+  if (event.works.length === 0 && composers.length === 0) return null;
 
   return (
     <div className="mt-6 border-t border-gold/30 pt-4">
       <p className="eyebrow text-[0.7rem]">Programme</p>
-      <ul className="mt-3 space-y-1.5">
-        {event.works.map((work) => (
-          <li key={`${work.title}-${work.composer}`}>
-            <span className="font-serif text-lg italic">{work.title}</span>
-            <span className="text-ink/60"> — {work.composer}</span>
-          </li>
-        ))}
-      </ul>
+      {event.works.length > 0 && (
+        <ul className="mt-3 space-y-1.5">
+          {event.works.map((work) => (
+            <li key={`${work.title}-${work.composer}`}>
+              <span className="font-serif text-lg italic">{work.title}</span>
+              <span className="text-ink/60"> — {work.composer}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+      {composers.length > 0 && (
+        <p className="mt-3 font-serif text-lg leading-relaxed">{composers.join(" · ")}</p>
+      )}
     </div>
   );
 }
