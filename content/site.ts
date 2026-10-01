@@ -44,9 +44,9 @@ export type SoliEvent = {
   access: "public" | "private";
   /** Ex. « Concert de Noël », « Mariage », « Réception d'entreprise » */
   context: string;
-  /** Optionnel tant que le lieu n'est pas confirmé */
+  /** Lieu et ville : optionnels tant qu'ils ne sont pas confirmés */
   venue?: string;
-  city: string;
+  city?: string;
   works: Work[];
   /** Miniature de la carte d'accueil — à défaut : affiche, 1re photo de la galerie, photo du lieu */
   thumbnail?: Photo;
@@ -101,6 +101,12 @@ export const site = {
   ] satisfies Member[],
 
   events: [
+    {
+      date: "2026-12-20",
+      access: "private",
+      context: "Concert",
+      works: [],
+    },
     {
       date: "2026-11-28",
       access: "private",

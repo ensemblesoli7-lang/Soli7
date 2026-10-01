@@ -35,7 +35,7 @@ export function EventHeading({
         {event.context}
       </Title>
       <p className="mt-1 text-ink/70">
-        {event.venue ? `${event.venue}, ${event.city}` : event.city}
+        {[event.venue, event.city].filter(Boolean).join(", ") || "Lieu à préciser"}
       </p>
       {event.note && <p className="mt-1 text-sm font-semibold text-burgundy">{event.note}</p>}
     </>

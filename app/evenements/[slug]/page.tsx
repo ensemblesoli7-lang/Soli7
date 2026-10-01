@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: PageProps<"/evenements/[slug]
   const event = findEvent((await params).slug);
   if (!event) return {};
   return {
-    title: `${event.context} — ${event.city} — ${site.name}`,
-    description: `${site.name}, ${formatEventDate(event.date)} à ${event.city}.`,
+    title: [event.context, event.city, site.name].filter(Boolean).join(" — "),
+    description: `${site.name}, ${formatEventDate(event.date)}${event.city ? ` à ${event.city}` : ""}.`,
   };
 }
 
