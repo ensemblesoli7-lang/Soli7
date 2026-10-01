@@ -111,7 +111,8 @@ export const site = {
       date: "2026-11-28",
       access: "private",
       context: "Concert vocal — Musique sacrée, opéra, mélodie",
-      city: "Chartres",
+      venue: "Fondation d'Aligre et Marie-Thérèse, ancienne abbaye de Josaphat",
+      city: "Lèves",
       works: [],
     },
     {
