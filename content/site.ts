@@ -91,7 +91,7 @@ export const site = {
   } as Photo | undefined,
 
   members: [
-    { name: "Stéphanie", role: "Soprano" },
+    { name: "Stéphanie Chenot", role: "Soprano" },
     { name: "Isabelle Nel", role: "Soprano" },
     { name: "Alexandra", role: "Mezzo-soprano" },
     { name: "Caroline", role: "Alto" },
