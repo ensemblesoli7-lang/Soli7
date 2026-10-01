@@ -105,6 +105,8 @@ export const site = {
       date: "2026-12-20",
       access: "private",
       context: "Concert",
+      venue: "EHPAD Le Grand Clos",
+      city: "Le Plessis-Bouchard",
       works: [],
     },
     {
