@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -32,7 +34,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="fr"
       className={`${cormorant.variable} ${sourceSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full font-sans">{children}</body>
+      <body className="min-h-full font-sans">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

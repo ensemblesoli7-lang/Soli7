@@ -33,3 +33,18 @@ export function formatEventDate(date: string): string {
 export function formatEventTime(time: string): string {
   return time.replace(":", "h");
 }
+
+/** Identifiant d'URL d'un événement : « 2026-03-22-chatillon ». */
+export function eventSlug(event: SoliEvent): string {
+  const city = event.city
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `${event.date}-${city}`;
+}
+
+export function isPastEvent(event: SoliEvent): boolean {
+  return event.date < todayInParis();
+}
