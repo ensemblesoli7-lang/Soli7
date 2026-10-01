@@ -42,3 +42,4 @@ next-env.d.ts
 
 # photos originales (non publiées)
 /public/images/*-original.*
+/.affiches-sources/
