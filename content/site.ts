@@ -94,9 +94,9 @@ export const site = {
     { name: "Stéphanie Chenot", role: "Soprano" },
     { name: "Isabelle Nel", role: "Soprano" },
     { name: "Alexandra", role: "Mezzo-soprano" },
-    { name: "Caroline", role: "Alto" },
+    { name: "Caroline", role: "Mezzo-soprano" },
     { name: "Didier Mauger", role: "Ténor" },
-    { name: "Antoine", role: "Baryton" },
+    { name: "Antoine", role: "Basse" },
     { name: "Marie-Marguerite", role: "Clavier" },
   ] satisfies Member[],
 
