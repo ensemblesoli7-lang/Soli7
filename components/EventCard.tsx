@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Photo, SoliEvent } from "@/content/site";
 import { eventSlug, isPastEvent } from "@/lib/events";
-import { EventHeading, EventProgramme } from "./EventDetails";
+import { EventHeading } from "./EventDetails";
 
 function thumbnailOf(event: SoliEvent): Photo | undefined {
   const firstPhoto = event.gallery?.find((item) => item.type === "photo");
@@ -43,7 +43,6 @@ export function EventCard({ event }: { event: SoliEvent }) {
 
       <div className="flex flex-1 flex-col p-6 sm:p-8">
         <EventHeading event={event} titleAs="h4" />
-        <EventProgramme event={event} />
 
         <Link
           href={href}
