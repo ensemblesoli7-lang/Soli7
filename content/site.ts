@@ -78,7 +78,7 @@ export const site = {
     { name: "Alexandra", role: "Mezzo-soprano" },
     { name: "Caroline", role: "Alto" },
     { name: "Didier", role: "Ténor" },
-    { name: "Prénom Nom", role: "Baryton" },
+    { name: "Antoine", role: "Baryton" },
     { name: "Prénom Nom", role: "Piano" },
   ] satisfies Member[],
 
