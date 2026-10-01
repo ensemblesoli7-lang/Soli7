@@ -38,7 +38,7 @@ export function EventCard({ event }: { event: SoliEvent }) {
 
         <h4 className="mt-4 font-serif text-3xl">{event.context}</h4>
         <p className="mt-1 text-ink/70">
-          {event.venue}, {event.city}
+          {event.venue ? `${event.venue}, ${event.city}` : event.city}
         </p>
         {event.note && <p className="mt-1 text-sm font-semibold text-burgundy">{event.note}</p>}
 

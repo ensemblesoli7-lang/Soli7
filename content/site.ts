@@ -37,7 +37,8 @@ export type SoliEvent = {
   access: "public" | "private";
   /** Ex. « Concert de Noël », « Mariage », « Réception d'entreprise » */
   context: string;
-  venue: string;
+  /** Optionnel tant que le lieu n'est pas confirmé */
+  venue?: string;
   city: string;
   works: Work[];
   photo?: Photo;
@@ -86,6 +87,13 @@ export const site = {
   ] satisfies Member[],
 
   events: [
+    {
+      date: "2026-11-28",
+      access: "public",
+      context: "Concert vocal — Musique sacrée, opéra, mélodie",
+      city: "Chartres",
+      works: [],
+    },
     {
       date: "2026-03-22",
       access: "public",
