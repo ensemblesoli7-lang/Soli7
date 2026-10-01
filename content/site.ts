@@ -59,12 +59,12 @@ export const site = {
   name: "Soli7",
   tagline: "Ensemble vocal lyrique",
   description:
-    "Soli7 réunit six voix lyriques accompagnées d'une pianiste, autour d'un répertoire allant de l'opéra à la mélodie, pour le concert comme pour vos événements.",
+    "Soli7 réunit six voix lyriques accompagnées d'une pianiste, de l'opéra à la mélodie, de l'air sacré au contemporain.",
   email: "ensemble.soli7@gmail.com",
 
   about: [
-    "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le répertoire de l'opéra, de l'oratorio et de la mélodie au plus près du public.",
-    "Des grands chœurs d'opéra aux pièces sacrées, en passant par les duos et trios les plus célèbres, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
+    "Soli7 est un ensemble de six chanteurs lyriques et d'une pianiste, né de l'envie de partager le chant lyrique dans toute sa diversité, au plus près du public.",
+    "De l'opéra à la mélodie, de l'air sacré à la création contemporaine, l'ensemble construit des programmes sur mesure, en concert comme lors de cérémonies et de réceptions privées.",
   ],
 
   groupPhoto: {
