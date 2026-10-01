@@ -43,6 +43,8 @@ export type SoliEvent = {
   photo?: Photo;
   /** Lien billetterie ou réservation, affiché seulement pour un événement public */
   ticketUrl?: string;
+  /** Info pratique, ex. « Entrée libre » */
+  note?: string;
 };
 
 export type Media = {
@@ -118,6 +120,15 @@ export const site = {
         { title: "Duo des fleurs (Lakmé)", composer: "Léo Delibes" },
         { title: "O mio babbino caro (Gianni Schicchi)", composer: "Giacomo Puccini" },
       ],
+    },
+    {
+      date: "2026-03-22",
+      access: "public",
+      context: "Concert de musique sacrée",
+      venue: "Église Saint-Philippe-Saint-Jacques, place de la Mairie",
+      city: "Châtillon",
+      works: [],
+      note: "Entrée libre",
     },
     {
       date: "2026-06-21",

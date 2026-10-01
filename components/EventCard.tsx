@@ -40,6 +40,7 @@ export function EventCard({ event }: { event: SoliEvent }) {
         <p className="mt-1 text-ink/70">
           {event.venue}, {event.city}
         </p>
+        {event.note && <p className="mt-1 text-sm font-semibold text-burgundy">{event.note}</p>}
 
         {event.works.length > 0 && (
           <div className="mt-6 border-t border-gold/30 pt-4">
