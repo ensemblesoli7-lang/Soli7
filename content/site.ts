@@ -116,6 +116,11 @@ export const site = {
       venue: "Fondation d'Aligre et Marie-Thérèse, ancienne abbaye de Josaphat",
       city: "Lèves",
       works: [],
+      thumbnail: {
+        src: "/images/evenements/2026-11-28-leves/chapelle-josaphat.jpg",
+        alt: "La chapelle de l'ancienne abbaye de Josaphat à Lèves",
+        focus: "63% center",
+      },
     },
     {
       date: "2026-03-22",
